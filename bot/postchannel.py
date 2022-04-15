@@ -159,6 +159,9 @@ def done(update: Update, context: CallbackContext):
     user_id = update.effective_user.id
     first_name = update.effective_user.first_name
 
+    update.message.reply_text(
+        text='Plantilla enviada con éxito. ✅',
+        reply_markup=ReplyKeyboardRemove(selective=True))
 
     context.bot.send_photo(
         chat_id=con.CHANNEL,
