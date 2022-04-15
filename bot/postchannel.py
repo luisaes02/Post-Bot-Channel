@@ -1,6 +1,6 @@
 import os
 import logging
-import constants as con
+import bot.constants as con
 from typing import Dict
 
 from telegram import (
@@ -179,7 +179,8 @@ def stop(update: Update, context: CallbackContext):
         return ConversationHandler.END
 
 def main():
-    updater = Updater(token=os.environ('TELEGRAM_TOKEN'), use_context=True)
+    token = os.getenv('TELEGRAM_TOKEN')
+    updater = Updater(token=token, use_context=True)
     dispatcher = updater.dispatcher
 
     conv_handler = ConversationHandler(
