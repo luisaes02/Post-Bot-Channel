@@ -6,7 +6,7 @@ administradores = [
 
 # Canal a donde se envia la plantilla
 # Se debe incluir el ' - '
-CHANNEL = -1001181743489
+CHANNEL = -1001685488396
 
 # Estados ConversationHandler
 PHOTO = 0
