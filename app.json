@@ -1,11 +1,7 @@
 {
     "name": "post-bot",
     "env": {
-        "ID_CANAL": {
-            "description": "-100xxx (el canal donde poner los posts)",
-            "value": "-1001685488396"
-        },
-        "TOKEN": {
+        "TELEGRAM_TOKEN": {
             "description": "el token del bot de telegram que te da https://t.me/BotFather",
             "value": "5132958550:AAG0J9Cinzu1N_7Jpa5r-WtjaUirXOyFWVU"
         }
